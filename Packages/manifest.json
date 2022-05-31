@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.google.ar.core.arfoundation.extensions": "https://github.com/devemin/arcore-unity-extensions.git",
+    "com.google.ar.core.arfoundation.extensions": "https://github.com/google-ar/arcore-unity-extensions.git",
     "com.unity.collab-proxy": "1.15.16",
     "com.unity.feature.ar": "1.0.0",
     "com.unity.feature.development": "1.0.1",

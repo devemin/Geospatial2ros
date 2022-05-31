@@ -9,11 +9,13 @@
 
 スマホが自己位置推定の単体デバイス (ROS ノード) になります。
 
-Geospatial API により、ストリートビューデータがあるエリアでは 0.5m 精度の位置・向きの情報を取得できます。
+Geospatial API により、ストリートビューデータがあるエリアでは 0.5m 精度の緯度・経度・高度・向きの情報を取得できます。
 
 それを ROS の sensor_msgs/NavSatFix と geometry_msgs/Pose で Publish、
 
 または、UDP にて緯度・経度・高度・向き・それらの精度の値を指定 IP アドレスに送れます。
+
+送る頻度はアプリ内で設定できます。
 
 (エラー処理等は、適宜追加してください)
 
@@ -60,7 +62,7 @@ https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 ●ROS で送る(pub)場合
 
 ■Unity 側(Androidスマホ)  
-①API key を作成 (Google Cloud Platform, リンクを参照)  
+①API key を作成 (Google Cloud Platform (GCP), リンクを参照)  
 https://zenn.dev/tkada/articles/04b44474149130
 
 (ARCore API の料金は、2022/5 現在無料らしいですが、多量のアクセスがある場合は不明です。どなたかコメント等でお教え頂けると幸いです)
