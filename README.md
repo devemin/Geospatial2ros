@@ -91,7 +91,7 @@ roslaunch ros_tcp_endpoint endpoint.launch
 ●UDP で送る場合
 
 double (8 byte ) x 7 種類の値を送ります。  
-適宜、他のIP にて受信してください（笑）
+適宜、他のIP にて受信してください。
 
 
 ## Features
