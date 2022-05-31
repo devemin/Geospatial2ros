@@ -69,15 +69,36 @@ https://zenn.dev/tkada/articles/04b44474149130
 
 ![png1](https://github.com/devemin/Geospatial2ros/blob/main/images/apikey.png)
 
-②Unity -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力  
+②Geospatial2ros.unity シーンファイルを開きます。
+
+③Unity -> Edit -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力  
 ![png2](https://github.com/devemin/Geospatial2ros/blob/main/images/apikey2.png)
 
-③Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。  
+④Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。  
 (私はROSの入ったPC が 192.168.0.58 でした。 10000はデフォルトでOK)  
 (スマホアプリ内で設定してもOKです)  
 ![png3](https://github.com/devemin/Geospatial2ros/blob/main/images/rossetting.png)
 
-④Unity -> File -> Build Settings -> Build  
+⑤Android 実機のバージョンを設定します。
+
+Unity -> Edit -> Project Settings -> Player のアンドロイドマークのタブ内に、API Level を設定する場所が2個あります。  
+これはAndroid 実機のバージョンより低い互換ナンバーにくする必要がありますが、そもそも Unity Hub で対応するAndroid API SDK がインストールされている必要があります。
+(多分Unity Hub では新しめのバージョンしか最初はインストールされないので、 sdkmanager 等で追加インストールが必要な方もいると思います。)
+
+Setting  
+![png7](https://github.com/devemin/Geospatial2ros/blob/main/images/unityhub.png)
+
+Unity Hub モジュールのインストール画面  
+![png6](https://github.com/devemin/Geospatial2ros/blob/main/images/androidsdk.png)
+
+(参考１)  
+https://zenn.dev/tetr4lab/articles/4ec6f0a1b4a7cc
+
+(参考２)  
+https://twitter.com/devemin/status/1530755524203261952
+
+
+⑥Unity -> File -> Build Settings -> (Android を選び、Switch Platform) -> Build  
 apk ファイルが出来ますので、Android 実機に転送して開き、インストールして下さい。  
 
 
@@ -128,6 +149,8 @@ https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros
 
 ## Note
 
+ROS-TCP-Connector で接続のログが出ない場合は、IP・ポート・ファイアーウォールの設定を確認しつつ、  
+アプリの ROS/UDP を切り替え Apply Settings を何度か押す操作を繰り返してみてください。
 
 
 
