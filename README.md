@@ -84,14 +84,26 @@ apk ファイルが出来ますので、Android 実機に転送して開き、�
 ■ROS 側  
 ROS 側は ROS-TCP-Endpoint ノードを実行してください。 (Unity 内で ROS-TCP-Connector を利用しています。)
 
+
 ```
-roslaunch ros_tcp_endpoint endpoint.launch
+# 動作確認
+
+roscore
+
+(別ターミナルで)roslaunch ros_tcp_endpoint endpoint.launch
 
 (別ターミナルで) rostopic echo /fix
 (別ターミナルで) rostopic echo /quat
 (sensor_msgs/NavSatFix と geometry_msgs/Pose が受信されるはず)
 
 ```
+
+
+![png4](https://github.com/devemin/Geospatial2ros/blob/main/images/ss1.png)
+
+![png5](https://github.com/devemin/Geospatial2ros/blob/main/images/ss2.png)
+
+
 
 ●UDP で送る場合
 
