@@ -5,7 +5,7 @@
 
 ![gif](https://github.com/devemin/Geospatial2ros/blob/main/images/top.gif)
 
-## Overview
+## Overview 概要
 
 スマホが自己位置推定の単体デバイス (ROS ノード) になります。
 
@@ -53,7 +53,7 @@ ROS-TCP-Endpoint
 https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 
 
-## Usage
+## Usage 使い方
 
 当リポジトリをダウンロードし、Unity で開いてください。  
 (初回は各種パッケージが自動ダウンロードされるため、やや時間がかかります。)
