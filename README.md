@@ -83,6 +83,7 @@ https://zenn.dev/tkada/articles/04b44474149130
 
 Unity -> Edit -> Project Settings -> Player のアンドロイドマークのタブ内に、API Level を設定する場所が2個あります。  
 これはAndroid 実機のバージョンより低い互換ナンバーにくする必要がありますが、そもそも Unity Hub で対応するAndroid API SDK がインストールされている必要があります。
+当リポジトリのものは Android 10 指定にしてありますので、適宜変更・SDK 追加等をしてください。
 (多分Unity Hub では新しめのバージョンしか最初はインストールされないので、 sdkmanager 等で追加インストールが必要な方もいると思います。)
 
 Setting  
