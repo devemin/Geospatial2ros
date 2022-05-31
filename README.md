@@ -96,7 +96,7 @@ Unity Hub モジュールのインストール画面
 https://zenn.dev/tetr4lab/articles/4ec6f0a1b4a7cc
 
 (参考２)  
-https://twitter.com/devemin/status/1530755524203261952
+https://zenn.dev/tetr4lab/articles/4ec6f0a1b4a7cc
 
 
 ⑥Unity -> File -> Build Settings -> (Android を選び、Switch Platform) -> Build  
