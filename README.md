@@ -57,9 +57,16 @@ https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 
 ■Unity 側(Androidスマホ)  
 API key を作成 (Google Cloud Platform, 下部リンクを参照)  
-Unity -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力  
 
-Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。（私はROSの入ったPC が 192.168.0.58 でした。 10000はデフォルトでOK）  
+![png1](https://github.com/devemin/Geospatial2ros/blob/main/images/apikey.png)
+
+Unity -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力  
+![png2](https://github.com/devemin/Geospatial2ros/blob/main/images/apikey2.png)
+
+Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。  
+(私はROSの入ったPC が 192.168.0.58 でした。 10000はデフォルトでOK)  
+(スマホアプリ内で設定してもOKです)  
+![png3](https://github.com/devemin/Geospatial2ros/blob/main/images/rossetting.png)
 
 Unity -> File -> Build Settings -> Build  
 apk ファイルが出来ますので、Android 実機に転送して開き、インストールして下さい。  
