@@ -52,6 +52,7 @@ https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 
 当リポジトリをダウンロードし、Unity で開いてください。
 
+
 ●ROS で送る(pub)場合
 
 ■Unity 側(Androidスマホ)  
@@ -71,6 +72,11 @@ ROS 側は ROS-TCP-Endpoint ノードを実行してください。 (Unity 内�
 
 ```
 roslaunch ros_tcp_endpoint endpoint.launch
+
+(別ターミナルで) rostopic echo /fix
+(別ターミナルで) rostopic echo /quat
+(sensor_msgs/NavSatFix と geometry_msgs/Pose が受信されるはず)
+
 ```
 
 ●UDP で送る場合
