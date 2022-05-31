@@ -158,9 +158,9 @@ https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros
 
 正しくつながれば、上記動作確認のところのスクショのようにログが出るはずで、rostopic echo /fix にも反応があるはずです。
 
-repeat rate は1秒間に何回発するかの値です。
-1.0 Hz = 1秒に1回
-0.5 Hz = 1秒に0.5回（つまり 2秒に1回）
+repeat rate は1秒間に何回発するかの値です。  
+1.0 Hz = 1秒に1回  
+0.5 Hz = 1秒に0.5回（つまり 2秒に1回）  
 
 
 
