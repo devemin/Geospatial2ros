@@ -25,7 +25,7 @@ Geospatial API により、ストリートビューデータがあるエリア�
 
 私は下記の環境で試しました。
 
-Environment
+●Environment
 
 Win 10 64bit  
 Unity 2021.3.2f1  
@@ -34,7 +34,7 @@ Android 10 (Xperia 1) -> ARCore 対応端末
 ROS (PC, Ubuntu 20.04, Noetic)
 
 
-Unity Packages
+●Unity Packages
 
 ARCore Extensions SDK (v1.31.0)  
 https://github.com/google-ar/arcore-unity-extensions  
@@ -44,6 +44,8 @@ Unity-Technologies/ROS-TCP-Connector (0.7.0)
 https://github.com/Unity-Technologies/ROS-TCP-Connector  
 (Package Link: https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector)  
 
+
+●ROS
 
 ROS-TCP-Endpoint  
 https://github.com/Unity-Technologies/ROS-TCP-Endpoint
