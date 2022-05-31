@@ -115,7 +115,7 @@ ROS 側は ROS-TCP-Endpoint ノードを実行してください。 (Unity 内�
 
 roscore
 
-(別ターミナルで)roslaunch ros_tcp_endpoint endpoint.launch
+(別ターミナルで) roslaunch ros_tcp_endpoint endpoint.launch
 
 (別ターミナルで) rostopic echo /fix
 (別ターミナルで) rostopic echo /quat
