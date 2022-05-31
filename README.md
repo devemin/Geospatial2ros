@@ -6,13 +6,17 @@
 
 ## Overview
 
-スマホが自己位置推定の単体デバイスになります。
+スマホが自己位置推定の単体デバイス (ROS ノード) になります。
 
 Geospatial API により、ストリートビューデータがあるエリアでの 0.5m 精度の位置・向きの情報を取得できます。
 
 それを ROS の sensor_msgs/NavSatFix と geometry_msgs/Pose で Publish、
 
 または、UDP にて緯度・経度・高度・向き・それらの精度の値を指定 IP アドレスに送れます。
+
+(エラー処理等は、適宜追加してください)
+
+
 
 ## Requirement
 
@@ -43,7 +47,17 @@ https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 
 ## Usage
 
-API を入力
+API key を作成 (Google Cloud Platform, 下部リンクを参照)
+Unity -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力
+
+Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。（私はROSの入ったPC が 192.168.0.58 でした。 10000はデフォルトでOK）
+
+ROS 側は ROS-TCP-Endpoint ノードを実行してください。 (Unity 内で ROS-TCP-Connector を利用しています。)
+
+```
+roslaunch ros_tcp_endpoint endpoint.launch
+```
+
 
 ## Features
 
