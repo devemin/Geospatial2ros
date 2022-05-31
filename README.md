@@ -17,6 +17,8 @@ Geospatial API により、ストリートビューデータがあるエリア�
 
 送る頻度はアプリ内で設定できます。
 
+ROS 側は ROS-TCP-Endpoint ノードを起動することでTopic が出ます。
+
 (エラー処理等は、適宜追加してください)
 
 なお、ARCore 対応端末でないと実行できません。  
@@ -101,6 +103,11 @@ https://zenn.dev/tetr4lab/articles/4ec6f0a1b4a7cc
 
 ⑥Unity -> File -> Build Settings -> (Android を選び、Switch Platform) -> Build  
 apk ファイルが出来ますので、Android 実機に転送して開き、インストールして下さい。  
+
+⑦Android スマホは WiFi 等 ROS ホストと同ネットワークに接続しておいて、アプリを実行します。
+
+⑧適宜画面のIP/Port/Rate 等を設定し、Apply Setting & START を押してください。  
+Status の英語コメントを読み、ストリートビューに出てくる場所を画面にかざすと、Localized され、高精度状態となります。
 
 
 ■ROS 側  
