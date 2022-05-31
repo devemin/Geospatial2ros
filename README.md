@@ -151,7 +151,7 @@ https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros
 ## Note
 
 ROS-TCP-Connector で接続のログが出ない場合は、IP・ポート・ファイアーウォールの設定を確認しつつ、  
-アプリの ROS/UDP を切り替え Apply Settings を何度か押す操作を繰り返してみてください。
+アプリの IP / Port / ROS/UDP を設定し Apply Settings のボタンを押す操作をしてから行ってみてください。
 
 正しくつながれば、上記動作確認のところのスクショのようにログが出るはずで、rostopic echo /fix にも反応があるはずです。
 
