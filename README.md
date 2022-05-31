@@ -17,6 +17,8 @@ Geospatial API により、ストリートビューデータがあるエリア�
 
 (エラー処理等は、適宜追加してください)
 
+なお、ARCore 対応端末でないと実行できません。  
+(https://developers.google.com/ar/devices)
 
 
 ## Requirement
@@ -27,8 +29,7 @@ Environment
 
 Win 10 64bit  
 Unity 2021.3.2f1  
-Android 10 (Xperia 1) -> ARCore 対応端末が必要  
-(https://developers.google.com/ar/devices)  
+Android 10 (Xperia 1) -> ARCore 対応端末
 
 ROS (PC, Ubuntu 20.04, Noetic)
 
@@ -56,22 +57,21 @@ https://github.com/Unity-Technologies/ROS-TCP-Endpoint
 ●ROS で送る(pub)場合
 
 ■Unity 側(Androidスマホ)  
-API key を作成 (Google Cloud Platform, 下部リンクを参照)  
+①API key を作成 (Google Cloud Platform, リンクを参照)  
+https://zenn.dev/tkada/articles/04b44474149130
 
 ![png1](https://github.com/devemin/Geospatial2ros/blob/main/images/apikey.png)
 
-Unity -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力  
+②Unity -> Project Settings -> XR Plug-in Management -> ARCore Extensions -> API keyを入力  
 ![png2](https://github.com/devemin/Geospatial2ros/blob/main/images/apikey2.png)
 
-Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。  
+③Unity -> Rototics -> ROS Settings で IPアドレス、ROS-TCP-Endpoint 用のポート番号を設定してください。  
 (私はROSの入ったPC が 192.168.0.58 でした。 10000はデフォルトでOK)  
 (スマホアプリ内で設定してもOKです)  
 ![png3](https://github.com/devemin/Geospatial2ros/blob/main/images/rossetting.png)
 
-Unity -> File -> Build Settings -> Build  
+④Unity -> File -> Build Settings -> Build  
 apk ファイルが出来ますので、Android 実機に転送して開き、インストールして下さい。  
-ARCore 対応端末でないと実行できません。  
-(https://developers.google.com/ar/devices)
 
 
 ■ROS 側  
