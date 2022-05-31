@@ -1,10 +1,18 @@
 # Geospatial2ros
 
+Unity で Geospatial API を用い、 ROS または UDP に送信できます。
+
 ![gif](https://github.com/devemin/Geospatial2ros/blob/main/images/top.gif)
 
 ## Overview
 
-Unity で Geospatial API を用い、 ROS または UDP に送信できます。
+スマホが自己位置推定の単体デバイスになります。
+
+Geospatial API により、ストリートビューデータがあるエリアでの 0.5m 精度の位置・向きの情報を取得できます。
+
+それを ROS の sensor_msgs/NavSatFix と geometry_msgs/Pose で Publish
+
+または、UDP にて緯度・経度・高度・向き・それらの精度の値を指定 IP アドレスに送れます。
 
 ## Requirement
 
