@@ -151,6 +151,9 @@ https://twitter.com/devemin/status/1531826102259175424?s=20&t=BKsVMaoQVFgkaeSuij
 
 下記リンク参考にお試しください。
 
+また、当プロジェクトがうまく実行できない場合も、下記 zenn記事での設定を確認してみて下さい。  
+  
+
 ## Reference
 
 ARCore Geospatial APIをUnityで使ってみる (Takeshi Kada)  
