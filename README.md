@@ -139,7 +139,13 @@ double (8 byte ) x 7 種類の値を送ります。
 
 ## Features
 
-Android で試しましたが、iOS でも設定すれば出来ると思いますが試していません。
+ROS1 で試しましたが、ROS2 もUnity -> Robotics -> ROS Settings の設定を変えれば出来ると思いますが試していません。
+
+Android で試しましたが、iOS も設定すれば出来ました。
+
+動作
+
+https://twitter.com/devemin/status/1531826102259175424?s=20&t=BKsVMaoQVFgkaeSuijiACA
 
 下記リンク参考にお試しください。
 
