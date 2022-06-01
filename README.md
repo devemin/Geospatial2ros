@@ -29,8 +29,8 @@ Geospatial API により、ストリートビューデータがあるエリア�
 
 Win 10 64bit  
 Unity 2021.3.2f1  
-Android 10 (Xperia 1)   -> ARCore 対応端末
-Android  9 (Xperia XZ1) -> ARCore 対応端末
+Android 10 (Xperia 1)   -> ARCore 対応端末  
+Android  9 (Xperia XZ1) -> ARCore 対応端末  
 
 ROS (PC, Ubuntu 20.04, Noetic)
 
