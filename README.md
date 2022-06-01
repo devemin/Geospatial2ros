@@ -98,7 +98,7 @@ https://zenn.dev/tetr4lab/articles/4ec6f0a1b4a7cc
 https://zenn.dev/tetr4lab/articles/4ec6f0a1b4a7cc
 
 
-⑥Unity -> File -> Build Settings -> (Android を選び、Switch Platform) -> Build  
+⑥Unity -> File -> Build Settings -> (Android を選び、Switch Platform) -> 上の Scenese In Build に Geospatial2ros.unity を追加 -> Build  
 apk ファイルが出来ますので、Android 実機に転送して開き、インストールして下さい。  
 
 ⑦Android スマホは WiFi 等 ROS ホストと同ネットワークに接続しておいて、アプリを実行します。
