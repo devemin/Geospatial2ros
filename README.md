@@ -11,8 +11,12 @@
 
 Geospatial API により、ストリートビューデータがあるエリアでは 0.5m 精度の緯度・経度・高度・向きの情報を取得できます。
 
-それを ROS の sensor_msgs/NavSatFix と geometry_msgs/Pose で Publish、または、UDP にて緯度・経度・高度・向き・それらの精度の値を指定 IP アドレスに送れます。
-
+それを ROS の sensor_msgs/NavSatFix と geometry_msgs/Pose で Publish、または、UDP にて緯度・経度・高度・向き・それらの精度の値を指定 IP アドレスに送れます。  
+  
+  
+** 使い方は 下記 Usage をどうぞ。  **  
+  
+  
 送る頻度はアプリ内で設定できます。ROS 側は ROS-TCP-Endpoint ノードを起動することでTopic が出ます。
 
 (エラー処理等は、適宜追加してください)
